@@ -11,7 +11,7 @@ using namespace std;
 
 class Film {
 private:
-    string trailer,titel,genre;
+    string trailer, titel, genre;
     int likes, jahr;
 public:
     Film(string titel, string genre, int jahr, int likes, string trailer) {
@@ -45,10 +45,11 @@ public:
     int getlikes() { return likes; };
 
     string anschreiben() {
-        return "Der Film " + gettitel() + " wurde in den Jahr " + to_string(getjahr()) + "  publiziert"  +" , hat folgendes Genre:"+getgenre()+
-               " und hat so viele Likes: "+ to_string(getlikes()) + "\n";
+        return "Der Film " + gettitel() + " wurde in den Jahr " + to_string(getjahr()) + "  publiziert" +
+               " , hat folgendes Genre:" + getgenre() +
+               " und hat so viele Likes: " + to_string(getlikes()) + "\n";
     };
-
+};
 
 
 #endif //LABB5_FILM_H
